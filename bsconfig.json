@@ -1,0 +1,28 @@
+{
+  "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
+  "name": "tag-and-trash",
+  "version": "0.1.0",
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    },
+    {
+      "dir": "test",
+      "subdirs": true,
+      "type": "dev"
+    }
+  ],
+  "entries": [{ "kind": "js", "main": "Main.res" }],
+  "warnings": {
+    "error": "+101"
+  },
+  "bs-dependencies": [
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": false
+  },
+  "refmt": 3,
+  "suffix": ".bs.js"
+}

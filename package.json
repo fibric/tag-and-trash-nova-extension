@@ -1,0 +1,22 @@
+{
+  "name": "tag-and-trash-nova-extension",
+  "version": "1.0.0",
+  "description": "Reveals, removes, and normalizes invisible characters, harmonizes line endings, and ensures an empty line at each file's end.",
+  "private": true,
+  "license": "MIT",
+  "keywords": [
+    "ReScript"
+  ],
+  "author": {
+    "name": "Denny Trebbin"
+  },
+  "scripts": {
+    "build": "bsb -make-world",
+    "clean": "bsb -clean-world",
+    "start": "bsb -clean-world -make-world -w"
+  },
+  "type": "commonjs",
+  "devDependencies": {
+    "bs-platform": "^8.4.2"
+  }
+}
