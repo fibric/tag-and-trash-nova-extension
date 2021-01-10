@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/rescript-lang/rescript-compiler/master/docs/docson/build-schema.json",
-  "name": "tag-and-trash",
-  "version": "0.1.0",
+  "name": "tag-and-trash-nova-extension",
+  "version": "1.0.0",
   "sources": [
     {
       "dir": "src",
@@ -13,12 +13,16 @@
       "type": "dev"
     }
   ],
-  "entries": [{ "kind": "js", "main": "Main.res" }],
+  "entries": [
+    {
+      "kind": "js",
+      "main": "Main.res"
+    }
+  ],
   "warnings": {
     "error": "+101"
   },
-  "bs-dependencies": [
-  ],
+  "bs-dependencies": [],
   "package-specs": {
     "module": "commonjs",
     "in-source": false
