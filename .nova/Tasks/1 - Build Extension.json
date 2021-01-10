@@ -1,0 +1,32 @@
+{
+  "actions" : {
+    "build" : {
+      "command" : "\/bin\/sh",
+      "enabled" : true,
+      "path" : "scripts\/build_extension.sh"
+    },
+    "clean" : {
+      "command" : "\/bin\/sh",
+      "enabled" : true,
+      "path" : "scripts\/clean_extension.sh"
+    },
+    "run" : {
+      "command" : "\/bin\/sh",
+      "enabled" : true,
+      "path" : "scripts\/package_extension.sh"
+    }
+  },
+  "arguments" : [
+    "package_target: ${WorkspaceName}",
+    "project_path: ${WorkspaceFolder}",
+    "CHANGELOG.md",
+    "extension.json",
+    "LICENSE.md",
+    "README.md",
+    "Images\/extension\/extension.png > extension.png",
+    "Images\/extension\/extension@2x.png > extension@2x.png",
+    "lib\/src\/js\/Main.bs.js > Scripts\/main.js"
+  ],
+  "identifier" : "A5AC51AA-869D-4CDD-B499-0E8A4C3E0487",
+  "openLogOnRun" : "fail"
+}
