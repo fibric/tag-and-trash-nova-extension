@@ -1,19 +1,19 @@
 <div align="center">
 
-<img src="https://gitlab.com/fibric/normalize-whitespace-nova-theme/-/raw/main/Images/logo/tag&trash-logo-small.svg" alt="tag&trash logo" width="265">
+<img src="https://gitlab.com/fibric/tag-and-trash-nova-extension/-/raw/main/Images/logo/tag&trash-logo-small.svg" alt="tag&trash logo" width="265">
 
 <p style="margin: 0 auto 0">
 Reveals and normalizes invisible characters, harmonizes line endings, and ensures an empty line at each file's end.
 </p>
 
 <!--
-<img src="https://gitlab.com/fibric/normalize-whitespace-nova-theme/-/raw/main/Images/normalize-whitespace-video.gif?inline=true" alt="tag&trash video showing invisible characters removed">
+<img src="https://gitlab.com/fibric/tag-and-trash-nova-extension/-/raw/main/Images/tag-and-trash-video.gif?inline=true" alt="tag&trash video showing invisible characters removed">
 -->
 
 -----
 
 <!--
-<img src="https://gitlab.com/fibric/normalize-whitespace-nova-theme/-/raw/main/Images/normalize-whitespace-screenshow@2x.png?inline=true" alt="tag&trash screenshot showing extension preferences">
+<img src="https://gitlab.com/fibric/tag-and-trash-nova-extension/-/raw/main/Images/tag-and-trash-screenshow@2x.png?inline=true" alt="tag&trash screenshot showing extension preferences">
 -->
 
 ## Reveal, remove, and harmonize invisible characters.
