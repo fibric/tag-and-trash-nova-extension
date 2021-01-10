@@ -24,6 +24,7 @@ Reveals and normalizes invisible characters, harmonizes line endings, and ensure
 Unnecessary invisible characters such as spaces and tabs are revealed, which are otherwise difficult to detect. Theme authors can control the display of hidden characters.
 </p>
 <p style="margin: 0 auto 0">
+
 *Styling via themes is not yet implemented.* **Help implement a neutral theme-able styling!**
 </p>
 
