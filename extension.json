@@ -1,9 +1,13 @@
 {
-    "identifier": "fibric.tagtrash",
-    "name": "tag&trash",
-    "organization": "fibric",
-    "description": "Lorem ipsum, dolor sit amet.",
-    "version": "1.0",
-    "categories": [],
-    "funding": "https://paypal.me/fibric"
+  "identifier": "fibric.tagtrash",
+  "name": "tag&trash",
+  "organization": "fibric",
+  "description": "Reveals, removes, and normalizes invisible characters, harmonizes line endings, and ensures an empty line at each file's end.",
+  "version": "1.0.0",
+  "categories": [],
+  "repository": "https://gitlab.com/fibric/tag-and-trash-nova-extension",
+  "bugs": "https://gitlab.com/fibric/tag-and-trash-nova-extension/-/issues",
+  "license": "MIT",
+  "funding": "https://paypal.me/fibric",
+  "min_runtime": "3.1"
 }
