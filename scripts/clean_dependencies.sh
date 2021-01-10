@@ -15,7 +15,9 @@ console.log('cleaning dependencies')
   const parse_arguemnts = arguments => {
     re = /(?<isAssignment>(?:.+)(?:[:])(?:.*))|^(?<isFileOrFolder>.*)$/
     return arguments.filter(value => {
-      const {groups: {isFileOrFolder}} = re.exec(value)
+      const {
+        groups: { isFileOrFolder },
+      } = re.exec(value)
       return isFileOrFolder ? true : false
     })
   }
