@@ -1,16 +1,20 @@
 <div align="center">
 
-<img src="https://gitlab.com/fibric/normalize-whitespace-nova-theme/-/raw/main/Images/logo/text-logo.svg" alt="tag&trasg logo" width="265">
+<img src="https://gitlab.com/fibric/normalize-whitespace-nova-theme/-/raw/main/Images/logo/tag&trash-logo-small.svg" alt="tag&trash logo" width="265">
 
 <p style="margin: 0 auto 0">
 Reveals and normalizes invisible characters, harmonizes line endings, and ensures an empty line at each file's end.
 </p>
 
-<img src="https://gitlab.com/fibric/polis-nova-theme/-/raw/main/Images/polis-theme-screenshot@2x.png?inline=true" alt="tag&trash video showing invisible characters removed">
+<!--
+<img src="https://gitlab.com/fibric/normalize-whitespace-nova-theme/-/raw/main/Images/normalize-whitespace-video.gif?inline=true" alt="tag&trash video showing invisible characters removed">
+-->
 
 -----
 
-<img src="https://gitlab.com/fibric/polis-nova-theme/-/raw/main/Images/syntax/polis-colors-transparent.svg" width="512" height="212" alt="Colors used in this Nova theme">
+<!--
+<img src="https://gitlab.com/fibric/normalize-whitespace-nova-theme/-/raw/main/Images/normalize-whitespace-screenshow@2x.png?inline=true" alt="tag&trash screenshot showing extension preferences">
+-->
 
 ## Reveal, remove, and harmonize invisible characters.
 
@@ -33,7 +37,7 @@ Normalization of invisible characters, line breaks, and empty lines at the end o
 
 <p style="margin: -1em auto 0">
 This extension has been carefully prepared to not break your files but still removes unnecessary invisible characters.
-Enable automatic clean up in `[Preferences]` or invoke the `[Normalize invisivles]` command.
+Enable automatic clean up in <code>[Preferences]</code> or invoke the <code>[Normalize invisivles]</code> command.
 </p>
 <p style="margin: 0 auto 0">
 In the preferences, you can enable and disable automatisms or toggle highlighting of invisible characters.
