@@ -9,14 +9,14 @@ const rm_options = {
   maxRetires: 3,
   recursive: true,
 }
-const re_arguments = /(?<left>\S+)(?:\s*)(?:(?<is_assignment>:)|(?<is_copy_action>>))(?:\s*)(?<right>\S+)|^(?<is_file_or_folder>.*)$/
+const re_arguments = /(?:\s*)(?<key>\S+)(?:\s*)(?:(?<assignment>:)|(?<copy>>))(?:\s*)(?<value>\S+)(?:\s*)|^(?<file_or_folder>.+)$/
 
 const rm_package_target_dir = async () => {
   for (arg of arguments) {
-    const {groups: {left,is_assignment, is_copy_action,right, is_file_or_folder}} = re_arguments.exec(arg)
-    if (is_assignment && left === 'package_target') {
+    const {groups: {key, assignment, copy, value, file_or_folder}} = re_arguments.exec(arg)
+    if (assignment && key === 'package_target') {
       try {
-        rm(right, rm_options) 
+        rm(value, rm_options) 
       } catch (err) {
         console.error(err)
         process.exit(1)
