@@ -1,5 +1,3 @@
-import stdlib
-
 @external
 class Scanner:
   pass
