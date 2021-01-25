@@ -11,7 +11,7 @@ const rm_options = {
 }
 const re_arguments = /(?:\s*)(?<key>\S+)(?:\s*)(?:(?<assignment>:)|(?<copy>>))(?:\s*)(?<value>\S+)(?:\s*)|^(?<file_or_folder>.+)$/
 
-const rm_package_target_dir = async () => {
+const cleanup_extension = async () => {
   for (arg of arguments) {
     const {
       groups: { key, assignment, copy, value, file_or_folder },
@@ -26,4 +26,7 @@ const rm_package_target_dir = async () => {
     }
   }
 }
-await rm_package_target_dir()
+
+(async () => {
+  await cleanup_extension()
+})()

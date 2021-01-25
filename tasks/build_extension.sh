@@ -92,4 +92,7 @@ const build_extension = async () => {
   await compile()
   await cp_files(parsed_args)
 }
-build_extension()
+
+(async () => {
+  await build_extension()
+})()

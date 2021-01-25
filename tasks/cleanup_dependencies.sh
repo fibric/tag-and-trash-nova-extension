@@ -32,4 +32,8 @@ const cleanup_dependencies = async () => {
     }
   }
 }
-await cleanup_dependencies()
+
+(async () => {
+  await cleanup_dependencies()
+})()
+
