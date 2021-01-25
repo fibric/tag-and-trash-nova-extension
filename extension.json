@@ -1,13 +1,39 @@
 {
-  "identifier": "fibric.tagtrash",
-  "name": "tag&trash",
+  "identifier": "fibric.traily",
+  "name": "Traily",
   "organization": "fibric",
-  "description": "Reveals, removes, and normalizes invisible characters, harmonizes line endings, and ensures an empty line at each file's end.",
+  "description": "Reveals (tag) and removes (trash), trailing invisible characters, and ensures an empty line at each file's end.",
   "version": "1.0.0",
-  "categories": [],
+  "categories": ["commands", "sidebars"],
   "repository": "https://gitlab.com/fibric/tag-and-trash-nova-extension",
   "bugs": "https://gitlab.com/fibric/tag-and-trash-nova-extension/-/issues",
   "license": "MIT",
   "funding": "https://paypal.me/fibric",
-  "min_runtime": "3.1"
+  "min_runtime": "4.0",
+  "main": "main.js",
+  "commands": {
+    "editor": [
+      {
+        "title": "Cleanup Trailing Invesibles + Newlines",
+        "command": "traily.cleanup_both"
+      },
+      {
+        "title": "Cleanup Trailing Invisbiles",
+        "command": "traily.cleanup_trailing"
+      },
+      {
+        "title": "Cleanup Trailing Newlines",
+        "command": "traily.cleanup_newlines"
+      }
+    ]
+  },
+  "config": [
+    {
+        "key": "traily.cleanup_auto",
+        "title": "Automatically Cleanup Trailing Invisible Characters And Newlines",
+        "type": "enum",
+        "values": ["Cleanup Automatically", "Invoke Manually"],
+        "default": "Invoke Manually"
+    }
+  ]
 }

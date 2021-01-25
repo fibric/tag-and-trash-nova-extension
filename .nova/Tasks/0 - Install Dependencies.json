@@ -1,22 +1,22 @@
 {
   "actions" : {
     "build" : {
-      "command" : "\/bin\/sh",
       "enabled" : true,
-      "path" : "scripts\/install_dependencies.sh"
+      "path" : "tasks\/install_dependencies.sh"
     },
     "clean" : {
-      "command" : "\/bin\/sh",
       "enabled" : true,
-      "path" : "scripts\/clean_dependencies.sh"
+      "path" : "tasks\/cleanup_dependencies.sh"
     }
   },
   "arguments" : [
     ".yarn",
     "yarn.lock",
     ".yarnrc.yml",
+    ".pnp.js",
     ".pnp.cjs",
-    "${Config:yarnrc.yml injection}nodeLinker: 'node-modules'"
+    "${Config:yarnrc.yml injection}nodeLinker: 'node-modules'",
+    "node_modules"
   ],
   "identifier" : "F115C1CF-131D-496C-A6C7-F9DD4B20AE70",
   "openLogOnRun" : "start"

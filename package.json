@@ -1,22 +1,24 @@
 {
-  "name": "tag-and-trash-nova-extension",
+  "name": "traily-nova-extension",
   "version": "1.0.0",
-  "description": "Reveals, removes, and normalizes invisible characters, harmonizes line endings, and ensures an empty line at each file's end.",
+  "description": "Removes invisible characters and ensures an empty line at each file's end.",
   "private": true,
   "license": "MIT",
   "keywords": [
-    "ReScript"
+    "Nova.app",
+    "Nova Extension",
+    "RapydScript"
   ],
   "author": {
     "name": "Denny Trebbin"
   },
   "scripts": {
-    "build": "bsb -make-world",
-    "clean": "bsb -clean-world",
-    "start": "bsb -clean-world -make-world -w"
+    "build:pretty": "rapydscript src/main.pyj --output build/main.pyj.js --es6 --bare --prettify",
+    "build": "rapydscript src/main.pyj --output build/main.pyj.js --es6 --bare --dd --di"
   },
   "type": "commonjs",
   "devDependencies": {
-    "bs-platform": "^8.4.2"
+    "npm": "^7.4.3",
+    "rapydscript": "^0.5.62"
   }
 }
