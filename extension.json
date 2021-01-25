@@ -5,8 +5,7 @@
   "description": "Removes invisible characters and ensures an empty line at each file's end.",
   "version": "1.0.0",
   "categories": [
-    "commands",
-    "sidebars"
+    "commands"
   ],
   "repository": "https://gitlab.com/fibric/tag-and-trash-nova-extension",
   "bugs": "https://gitlab.com/fibric/tag-and-trash-nova-extension/-/issues",
