@@ -32,20 +32,20 @@ def trash_both(editor):
   trash_trailing(editor)
   trash_newlines(editor)
 
-JS('nova').commands.register("tagtrash.trash_trailing", def(editor):
+JS('nova').commands.register("traily.cleanup_trailing", def(editor):
   if not editor.document.isEmpty:
     should_save = !editor.document.isDirty
     trash_trailing(editor)
     if should_save: editor.save()
 )
-JS('nova').commands.register("tagtrash.trash_newlines", def(editor):
+JS('nova').commands.register("traily.cleanup_newlines", def(editor):
   if not editor.document.isEmpty:
     should_save = !editor.document.isDirty
     trash_newlines(editor)
     if should_save: editor.save()
 
 )
-JS('nova').commands.register("tagtrash.trash_both", def(editor):
+JS('nova').commands.register("traily.cleanup_both", def(editor):
   if not editor.document.isEmpty:
     should_save = !editor.document.isDirty
     trash_both(editor)
