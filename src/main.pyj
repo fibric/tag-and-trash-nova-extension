@@ -1,0 +1,62 @@
+import stdlib
+
+@external
+class Scanner:
+  pass
+
+def cleanup_trailing(editor, document_range):
+  user_selected_range = editor.selectedRanges
+  document_content = editor.getTextInRange(document_range)
+  scanner = /([\t ]+)$/gm
+  return document_content.replace(scanner, "")
+
+def cleanup_newlines(editor, document_range):
+  user_selected_range = editor.selectedRanges # [offset, size]
+  document_content = editor.getTextInRange(document_range)
+  scanner = /[\n]{3,}$(?=[\n]{1,})$/gm
+  return document_content.replace(scanner, "")
+
+def trash_trailing(editor):
+    editor.edit(def(edit_queue):
+      document_range = new Range(0, editor.document.length)
+      edit_queue.replace(document_range, cleanup_trailing(editor, document_range))
+    )
+
+def trash_newlines(editor):
+    editor.edit(def(edit_queue):
+      document_range = new Range(0, editor.document.length)
+      edit_queue.replace(document_range, cleanup_newlines(editor, document_range))
+    )
+
+def trash_both(editor):
+  trash_trailing(editor)
+  trash_newlines(editor)
+
+JS('nova').commands.register("tagtrash.trash_trailing", def(editor):
+  if not editor.document.isEmpty:
+    should_save = !editor.document.isDirty
+    trash_trailing(editor)
+    if should_save: editor.save()
+)
+JS('nova').commands.register("tagtrash.trash_newlines", def(editor):
+  if not editor.document.isEmpty:
+    should_save = !editor.document.isDirty
+    trash_newlines(editor)
+    if should_save: editor.save()
+
+)
+JS('nova').commands.register("tagtrash.trash_both", def(editor):
+  if not editor.document.isEmpty:
+    should_save = !editor.document.isDirty
+    trash_both(editor)
+    if should_save: editor.save()
+)
+
+JS('exports').activate = def():
+  print("activated")
+  JS('nova').workspace.onDidAddTextEditor(def(editor):
+    editor.onWillSave(trash_both)
+  )
+
+JS('exports').deactivate = def():
+print("deactivated")
