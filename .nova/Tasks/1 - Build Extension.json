@@ -6,7 +6,7 @@
     },
     "clean" : {
       "enabled" : true,
-      "path" : "tasks\/clean_extension.sh"
+      "path" : "tasks\/cleanup_extension.sh"
     },
     "run" : {
       "enabled" : true,
